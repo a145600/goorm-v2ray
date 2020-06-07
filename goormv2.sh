@@ -1,6 +1,8 @@
 #!/bin/bash
 #下载核心程序
 apt-get -y update
+apt install curl -y
+apt install unzip -y
 mkdir /tmp/v2ray
 curl -L -H "Cache-Control: no-cache" -o /tmp/v2ray/v2ray.zip https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip
 unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
