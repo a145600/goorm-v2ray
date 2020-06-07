@@ -9,6 +9,8 @@ unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
 install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
 install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
 
+rm -rf /tmp/v2ray
+
 install -d /usr/local/etc/v2ray
 wget -P /usr/local/etc/v2ray https://github.com/byxiaopeng/goorm-v2ray/raw/master/config.json
 
